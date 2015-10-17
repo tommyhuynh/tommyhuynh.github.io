@@ -30,11 +30,12 @@ body {
 .row {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-  border-bottom:1px solid #efefef;
+  padding-bottom: 200px;
+  border-bottom:2px solid #efefef;
 }
 
 .img-circle {
     padding-left: 10px;
     border-radius: 50%;
 }
+
