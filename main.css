@@ -27,13 +27,14 @@ body {
   color:#fff;
 }
 
-.row1 {
-  padding-left: 10px;
-  padding-right: 10px;
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  border-bottom:1px solid #efefef;
 }
 
-.row1 {
-  padding-left: 10px;
-  padding-right: 10px;
-  
+.img-circle {
+    padding-left: 10px;
+    border-radius: 50%;
 }
