@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-fixed-top {
-  background-color: #efefef;
+  background-color: blue;
 }
 
 .navbar-fixed-top .container .nav {
@@ -39,6 +39,7 @@ body {
     border-radius: 50%;
 }
 
-
-
+#social-links li{
+  display: inline;
+}
 
