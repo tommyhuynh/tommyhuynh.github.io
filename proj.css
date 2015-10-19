@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-fixed-top {
-  background-color: blue;
+  background-color: #efefef;
 }
 
 .navbar-fixed-top .container .nav {
@@ -12,34 +12,9 @@ body {
   text-transform: uppercase;
 }
 
-.jumbotron {
-  background-image:url('space.png');
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron h1{
-  color:#fff;
-}
-
-.jumbotron p{
-  color:#fff;
-}
-
 .row {
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 200px;
-  border-bottom:2px solid #efefef;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.img-circle {
-    padding-left: 10px;
-    border-radius: 50%;
-}
-
-#social-links li{
-  display: inline;
-}
 
