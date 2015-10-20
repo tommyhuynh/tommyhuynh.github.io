@@ -11,3 +11,20 @@ body {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
+
+.jumbotron {
+  background-image:url('http://i2.wp.com/www.dailycal.org/assets/uploads/2014/03/DSC_0272.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1{
+  color:white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.row {
+	padding-left: 10px;
+	padding-right: 10px;
+}
