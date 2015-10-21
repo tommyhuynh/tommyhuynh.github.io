@@ -31,7 +31,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 150px;
-  border-bottom:2px solid #efefef;
+  
 }
 
 #profile-pic {
@@ -43,6 +43,26 @@ body {
     border-radius: 50%;
 }
 
+#education_tab {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#edu_jumbotron {
+  background-image:url('http://i2.wp.com/www.dailycal.org/assets/uploads/2014/03/DSC_0272.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#edu_jumbotron h1{
+  color:white;
+  text-shadow: 2px 2px 2px black;
+}
 
 
+#proj_tab {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 

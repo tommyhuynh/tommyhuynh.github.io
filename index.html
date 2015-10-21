@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- Smooth scroll adapted from https://github.com/shadrech/DEMOS/blob/master/demo-003/main.html -->
+
 <html lang="en">
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -8,21 +11,52 @@
 		<!-- Should it be here? -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 		
-		 <link rel="stylesheet" href="main.css">
-	</head>
+		<link rel="stylesheet" href="main.css">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+		
+
+		<script type="text/javascript">
+			$('html').css({display: 'none'});
+			$(document).ready(function(){
+				var hashURL = location.hash;
+				if(hashURL != '' && hashURL.length > 1){
+					$('html, body').scrollTop(100);
+					$('html').css({display: 'block'});
+					smoothScrollTo(hashURL);
+				} else {
+					$('html').css({display: 'block'});
+				}
+			});
+
+			/**
+			 * Method smooth scrolls to given anchor point
+			 */
+			function smoothScrollTo(anchor) {
+				var duration = 1500; //time (milliseconds) it takes to reach anchor point
+				var targetY = $(anchor).offset().top;
+				$("html, body").animate({
+					"scrollTop" : targetY
+				}, duration, 'easeInOutCubic');
+			}
+
+		</script>
+	</head>
+	
 	<body>
 		<nav class="navbar nav-pills navbar-fixed-top">
   			<div class="container">
   				<ul class="nav nav-pills">
-				  <li role="presentation" class="active"><a href="index.html">Tommy</a></li>
-				  <li role="presentation"><a href="education.html">Education</a></li>
-				  <li role="presentation"><a href="projects.html">Projects</a></li>
+				  <li role="presentation"><a href="#about_scroll_to">Tommy</a></li>
+				  <li role="presentation"><a href="#edu_scroll_to">Education</a></li>
+				  <li role="presentation"><a href="#proj_scroll_to">Projects</a></li>
 				</ul>
   			</div>
 		</nav>
 
-		<div class="jumbotron">
+		<div id="about_scroll_to"></div><br>
+		<div id="about_tab" class="jumbotron">
 	      <div class="container">
 	        <h1>"The journey of a thousand miles begins with a single step."</h1>
 	        <p><i>-Lao Tzu</i></p>
@@ -55,13 +89,92 @@
 	    </div>
 
 
+	    <div id="edu_scroll_to"></div><br><br><br>
+	    <div id="edu_jumbotron" class="jumbotron">
+	      <div class="container">
+	        <h1>University of California, Berkeley</h1>
+	      </div>
+	    </div>
 
+
+	    <div id="education_tab" class="row">
+	    	<div class="container">
+	    		<p><b><font size="5">B.A. in Computer Science w/ Minor in Statistics	</font></b></p>
+	    		<p>Sophomore | Expected Graduation: May 2018</p>
+	    		<p>GPA: <b>3.76</b><br><br>
+
+	    		<p><font size="3">Courses Taken:</font></p>
+	    			<ul>
+	    				<li><a href="https://hkn.eecs.berkeley.edu/courseguides/CS/61C">Machine Structures (CS61C | Fall'15)</a></li>
+	    				<li><a href="https://hkn.eecs.berkeley.edu/courseguides/CS/61B">Data Structures and Algorithms (CS61B | Spring'15)</a></li>
+	    				<li><a href="https://hkn.eecs.berkeley.edu/courseguides/CS/61A">Structure and Interpretation of Computer Programs (CS61A | Fall'14)</a></li>
+	    				<br>
+	    				<li><a href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math54">Linear Algebra and Differential Equations (Math 54 | Fall'15)</a></li>
+	    				<li><a href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math1B">Calculus B (Math 1B | Spring'15)</a></li>
+	    				<li><a href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math1A">Calculus A (Math 1A | Fall'14)</a></li>
+	    			</ul>
+		    </div>
+
+	    </div>
+
+	    <div id="proj_scroll_to"></div><br><br>
+	    <div class="row">
+	    	<div class="container">
+	    		<h1>TL;DR | Google Chrome Extension <a href="https://chrome.google.com/webstore/detail/tldr/beeblnjdndalgdcafnaacphgdanmekno">
+					  			<img src="http://www.extremetech.com/wp-content/uploads/2012/01/chromewebstore.png" height="25" width="25"></a> <a href="https://github.com/tommyhuynh/TLDR">
+					  			<img src="http://uxrepo.com/static/icon-sets/foundation/svg/fi-social-github.svg" height="25" width="25"></a></h1>
+				<h1><small><small>Cal Hacks | October 2015</small></small></h1>
+		    	<div class="col-md-6">
+		    		
+			    	<p>TL;DR can be describe as "SparkNotes but for web articles!" It summarize any article by just (1) highlighting the text and (2) clicking "TLDR". Adjust the "Summary Size" settings to scale the length of the summaries to your liking. Perfect for those long news/social articles that no one has time to read! </p>
+			    	<p>My role in this project consisted of building the actual Google Chrome extension itself. This involved learning JavaScript on the spot and utilizing Content Scripts to interact with the web-page in order to pull the highlighted text into our alogorithm. I also helped develop the "popularity" algorithm that determines which sentences best summarizes the article. A quick description of the algorithm:
+			    		<ol>
+			    			<li>Parses the article into words and sentences.</li>
+			    			<li> Assigns "popularity" points to each occurance of a word and if that word occurs in the title.</li>
+			    			<li>Sentence "popularity" is then formed from the sum of those words' values. </li>
+			    			<li>Return a certain percanatage of the most highly ranked sentences in chronological order. </li>
+			    		</ol>
+			    	This Google Chrome Extension was built by my friends and I during Cal Hacks 2015. <i>Released October 18, 2015.</i><br> 
+					</p>
+		    	</div>
+		    	<div class="col-md-6">
+		    		<div class="thumbnail">
+                        <img src="main-logo.png">
+                    </div>
+		    	</div>	
+		    </div>
+
+		    <div class="container">
+		    	<div class="col-md-6">
+		    		<div class="thumbnail">
+                        <img src="extension-in-actions.png">
+                    </div>
+		    	</div>
+		    	<div class="col-md-6">
+		    		<div class="thumbnail">
+                        <img src="summary-size.png">
+                    </div>
+		    	</div>
+		    </div>
+	    </div>
 
 	    <footer id="footer">
 				<div class="copyright" align="middle">
 					<small>&copy; Created using Bootstrap and the Power of the Shaolin.</small>
 				</div>
 		</footer>
+
+		<script type="text/javascript">
+			//animating navbar buttons
+			$('a[href^="#"]').bind('click', function(event){
+				var anchor = $(this).attr('href');
+				smoothScrollTo(anchor);
+				return false;
+			});
+
+		</script>
+
+
 	</body>
 
 </html>
