@@ -1,11 +1,14 @@
-body { 
-  padding-top: 70px; 
+body {
+  padding-top: 70px;
 }
 
 .navbar-fixed-top {
   background-color: #efefef;
 }
 
+#head {
+  padding-top: 24px;
+}
 .navbar-fixed-top .container .nav {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -14,6 +17,7 @@ body {
 
 .jumbotron {
   background-image:url('space.png');
+  background-attachment: fixed;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +35,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 150px;
-  
+
 }
 
 #profile-pic {
@@ -65,4 +69,3 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-

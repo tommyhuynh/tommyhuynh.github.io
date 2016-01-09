@@ -6,52 +6,36 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+
 		<!-- Should it be here? -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 		<link rel="stylesheet" href="main.css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
-		
-
-		<script type="text/javascript">
-			$('html').css({display: 'none'});
-			$(document).ready(function(){
-				var hashURL = location.hash;
-				if(hashURL != '' && hashURL.length > 1){
-					$('html, body').scrollTop(100);
-					$('html').css({display: 'block'});
-					smoothScrollTo(hashURL);
-				} else {
-					$('html').css({display: 'block'});
-				}
-			});
-
-			/**
-			 * Method smooth scrolls to given anchor point
-			 */
-			function smoothScrollTo(anchor) {
-				var duration = 1500; //time (milliseconds) it takes to reach anchor point
-				var targetY = $(anchor).offset().top;
-				$("html, body").animate({
-					"scrollTop" : targetY
-				}, duration, 'easeInOutCubic');
-			}
-
-		</script>
 	</head>
-	
+
 	<body>
-		<nav class="navbar nav-pills navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
+
   			<div class="container">
-  				<ul class="nav nav-pills">
-				  <li role="presentation"><a href="#about_scroll_to">Tommy</a></li>
-				  <li role="presentation"><a href="#edu_scroll_to">Education</a></li>
-				  <li role="presentation"><a href="#proj_scroll_to">Projects</a></li>
-				</ul>
+
+  				<div class="navbar-header">
+					<a id="head"class="navbar-brand" href="index.html">Tommy Huynh</a>
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+
+  				</div>
+  				<div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+  					<ul class="nav navbar-nav navbar-left">
+					  <li><a href="#edu_scroll_to">Education</a></li>
+					  <li><a href="#proj_scroll_to">Projects</a></li>
+					</ul>
+  				</div>
+
   			</div>
 		</nav>
 
@@ -70,7 +54,7 @@
                         <img class="img-circle" src="Profile.jpg" height="240" width="220">
 		    		</div>
                 </div>
-		    		
+
 		    	<div class="col-md-6">
 		    		<h1>Tommy Huynh </h1>
 		    		<p>I am currently a sophomore at UC Berkeley, pursuing my B.A. in Computer Science and minor in Statistics. I am currently a Facebook TechStart Role Model stationed at Coliseum College Prep Academy High School. I make weekly visits to connect students to the amazing world of technology by teaching and giving advice to this next generation.</p>
@@ -117,7 +101,7 @@
 
 	    </div>
 
-	    <div id="proj_scroll_to"></div><br><br>
+	    <div id="proj_scroll_to"></div><br><br><br>
 	    <div class="row">
 	    	<div class="container">
 	    		<h1>TL;DR | Google Chrome Extension <a href="https://chrome.google.com/webstore/detail/tldr/beeblnjdndalgdcafnaacphgdanmekno">
@@ -125,7 +109,7 @@
 					  			<img src="http://uxrepo.com/static/icon-sets/foundation/svg/fi-social-github.svg" height="25" width="25"></a></h1>
 				<h1><small><small>Cal Hacks | October 2015</small></small></h1>
 		    	<div class="col-md-6">
-		    		
+
 			    	<p>TL;DR can be describe as "SparkNotes but for web articles!" It summarize any article by just (1) highlighting the text and (2) clicking "TLDR". Adjust the "Summary Size" settings to scale the length of the summaries to your liking. Perfect for those long news/social articles that no one has time to read! </p>
 			    	<p>My role in this project consisted of building the actual Google Chrome extension itself. This involved learning JavaScript on the spot and utilizing Content Scripts to interact with the web-page in order to pull the highlighted text into our alogorithm. I also helped develop the "popularity" algorithm that determines which sentences best summarizes the article. A quick description of the algorithm:
 			    		<ol>
@@ -134,14 +118,14 @@
 			    			<li>Sentence "popularity" is then formed from the sum of those words' values. </li>
 			    			<li>Return a certain percanatage of the most highly ranked sentences in chronological order. </li>
 			    		</ol>
-			    	This Google Chrome Extension was built by my friends and I during Cal Hacks 2015. <i>Released October 18, 2015.</i><br> 
+			    	This Google Chrome Extension was built by my friends and I during Cal Hacks 2015. <i>Released October 18, 2015.</i><br>
 					</p>
 		    	</div>
 		    	<div class="col-md-6">
 		    		<div class="thumbnail">
                         <img src="main-logo.png">
                     </div>
-		    	</div>	
+		    	</div>
 		    </div>
 
 		    <div class="container">
@@ -164,17 +148,11 @@
 				</div>
 		</footer>
 
-		<script type="text/javascript">
-			//animating navbar buttons
-			$('a[href^="#"]').bind('click', function(event){
-				var anchor = $(this).attr('href');
-				smoothScrollTo(anchor);
-				return false;
-			});
+		<!-- jQuery -->
+		<script src="jquery.js"></script>
 
-		</script>
-
-
+		<!-- Bootstrap Core JavaScript -->
+		<script src="bootstrap.min.js"></script>
 	</body>
 
 </html>
