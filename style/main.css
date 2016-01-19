@@ -16,7 +16,7 @@ body {
 }
 
 .jumbotron {
-  background-image:url('space.png');
+  background-image:url('img/space.png');
   background-attachment: fixed;
   height: 400px;
   background-repeat: no-repeat;
