@@ -3,20 +3,18 @@ body {
 }
 
 .navbar-fixed-top {
-  background-color: #efefef;
+  background-color: #FAFAFA;
 }
 
 #head {
-  padding-top: 24px;
 }
+
 .navbar-fixed-top .container .nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
   text-transform: uppercase;
 }
 
-.jumbotron {
-  background-image:url('http://7-themes.com/data_images/out/48/6934983-hd-nature-wallpapers-26782.jpg');
+#about_tab {
+  background-image:url('http://www.planwallpaper.com/static/images/nature-wallpapers-hd.jpg');
   background-attachment: fixed;
   height: 400px;
   background-repeat: no-repeat;
@@ -55,6 +53,7 @@ body {
 #edu_jumbotron {
   background-image:url('http://i2.wp.com/www.dailycal.org/assets/uploads/2014/03/DSC_0272.jpg');
   height: 400px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
