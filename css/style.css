@@ -1,0 +1,418 @@
+* {
+	box-sizing: border-box;
+}
+
+* { margin: 0; padding: 0; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+
+/*-----links------*/
+
+a {
+    text-decoration: none !important;
+}
+
+a:link {
+    color: #292929;
+
+    background-color:
+    text-decoration: none;
+}
+a:visited {
+    color:#292929 ;
+    background-color: ;
+    text-decoration: none;
+}
+a:hover {
+    color:#292929 ;
+    background-color: ;
+    text-decoration: underline;
+}
+a:active {
+    color:#292929;
+    background-color: ;
+    text-decoration: underline;
+}
+
+
+
+.clearfix {
+  overflow: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float:left ;
+    padding: 17px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .desktop {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
+
+
+
+/* ----------------Main CSS----------------*/
+
+
+    .home {
+    margin-top: 3em;
+    font-weight: 700;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: .3em;
+}
+
+
+
+.intro-blurb {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 45px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .intro-blurb {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 45px;
+
+}
+}
+
+
+.intro-blurb2 {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 0px;
+    margin-top: .5em;
+}
+
+.intro-blurb2row {
+    margin-bottom: 4em;
+}
+
+
+/*-----work-wrapper------*/
+
+.workbackgroundblurb {
+    height:100%;
+    background-color: blue;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground1 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground2 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground3 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground4 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground5 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.workbackground6 {
+    height:100%;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.cover_dealdash {
+    max-width: 100%;
+    box-shadow: 0px 5px 25px #808080;
+    margin-left: 0em;
+    max-height: 30em;
+    display: block;
+    margin: auto;
+
+}
+
+.cover_dealdash2 {
+    max-width: 100%;
+    box-shadow: 0px 10px 50px #3A8DBE;
+    margin-left: 0em;
+    max-height: 35em;
+    display: block;
+    margin: auto;
+
+}
+
+.cover_lanturn {
+    max-width: 100%;
+
+    margin-left: 0em;
+    max-height: 60em;
+    display: block;
+    margin: auto;
+}
+
+.cover_storybubbles {
+    max-width: 100%;
+    margin-left: 0em;
+    max-height: 32em;
+    box-shadow: 0px 5px 25px #808080;
+    display: block;
+    margin: auto;
+}
+
+.cover_radiotopia {
+    max-width: 100%;
+    margin-left: 0em;
+    max-height: 32em;
+
+    display: block;
+    margin: auto;
+}
+
+
+.work-content {
+    color: white;
+}
+
+.work-content-dark {
+    color: #292929;
+}
+
+.work-title {
+    font-weight: 300;
+    font-size: 72px;
+    font-family: 'Signika', sans-serif;
+}
+
+.work-info {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 1em;
+    font-family: 'Signika', sans-serif;;
+}
+
+.work-description {
+    font-size: 15px;
+    opacity: .9;
+    padding-bottom: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.work-viewmore {
+ font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 1em;
+    font-family: 'Signika', sans-serif;;
+}
+
+
+
+.work-viewmore:hover {
+    font-weight: 700;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .work-content {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .work-content-dark {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .work-thumbnail-storybubbles {
+    padding-top: 6em;
+    }
+
+    .work-thumbnail-radiotopia {
+    padding-top: 2em;
+    }
+
+    .work-thumbnail-lanturn {
+    padding-top: 3em;
+    }
+}
+
+
+/*-----intro-wrapper------*/
+
+.intro-wrapper {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+.intro-wrapper {
+    margin-bottom: 3em;
+    margin-top: 3.5em;
+    }
+}
+
+.profile-pic {
+    margin-bottom: 1em;
+}
+
+.profile{
+    border-radius: 50%;
+    max-width:7.5em;
+    display: block;
+    margin: auto;
+}
+
+.profile-name {
+    text-align: center;
+    margin-bottom: 0.4em;
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.profile-name-desc {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+}
+
+.social-pic {
+    border-radius: 50%;
+    max-width:1.9em;
+
+}
+
+.social-list {
+    display: inline;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.social-item{
+    display: inline;
+    padding-left: .5em;
+    padding-right: .5em;
+
+}
+
+
+
+
+
+
+
+
+
+/*-----nav bar------*/
+
+
+
+.navbar, .navbar-inverse {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    min-height: 300px;
+    float: center;
+}
+
+.nav li {
+    display: inline;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font-family: 'Signika';
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 30px 25px 33px 25px;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: #ffffff;
+    transition: 0.7s all linear;
+    height: 100%;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+.navbar, .navbar-inverse {
+
+    float: right;
+}
+}
+
+
+
+
+
+.footer {
+    color: gray;
+    font-family: 'Signika';
+    text-align: center;
+}
