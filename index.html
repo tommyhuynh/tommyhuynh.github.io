@@ -74,15 +74,15 @@
 
 <hr>
 
-
+<!-- TLDR Project -->
 	<div class="work-wrapper row desktop workbackground2">
 		<div class="work-thumbnail-storybubbles col-5"><img src="img/extension-in-actions.png"   class="cover_storybubbles"></div>
 		<div class= "work-content-dark col-6">
-			<div class="work-title">TL;DR</div>
+			<div class="work-title">TLDR</div>
 			<div class="work-info">October 2015 &bull; Developer &bull; Google Chrome Extension &bull; Cal Hacks</div>
-			<div class="work-description">TL;DR is a Chrome Extension that allows users to summarize any online article into more digestable form.
+			<div class="work-description">TLDR is a Chrome Extension that allows users to summarize any online article into more digestable form.
 				Includes features such summary length and articles themes. It currently has over 3000 users.</div>
-			<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#tldrModal">Learn More</button>
+			<button type="button" class="btn btn-default btn-md buttons" data-toggle="modal" data-target="#tldrModal">Learn More</button>
 		</div>
 		<div class="col-1"></div>
 
@@ -121,16 +121,30 @@
 
 						  <!-- Left and right controls -->
 						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></span>
 						    <span class="sr-only">Previous</span>
 						  </a>
 						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span>
 						    <span class="sr-only">Next</span>
 						  </a>
 						</div>
 
-		        <p>Some text in the modal.</p>
+						<div class="container modal_proj_desc">
+							<p>TLDR can be describe as "SparkNotes but for web articles!" It summarize any article by just (1) highlighting the text and (2) clicking "TLDR". Adjust the "Summary Size" settings to scale the length of the summaries to your liking. Perfect for those long news/social articles that no one has time to read!
+							The current version available on the Chrome store currently has over 3000 users. We are updating the application every so often with the most recent update adding a new feature that displays the themes discussed in the article.</p>
+				    	<p>My role in this project consisted of building the actual Google Chrome extension itself. This involved learning JavaScript on the spot and utilizing Content Scripts to interact with the web-page in order to pull the highlighted text into our alogorithm. I also helped develop the "popularity" algorithm that determines which sentences best summarizes the article. A quick description of the algorithm:</p>
+							<div class="container">
+								<ol>
+				    			<li>Parses the article into words and sentences.</li>
+				    			<li> Assigns "popularity" points to each occurance of a word and if that word occurs in the title.</li>
+				    			<li>Sentence "popularity" is then formed from the sum of those words' values. </li>
+				    			<li>Return a certain percanatage of the most highly ranked sentences in chronological order. </li>
+				    		</ol>
+							</div>
+				    	This Google Chrome Extension was built by my friends and I during Cal Hacks 2015. <i>Released October 18, 2015.</i><br>
+
+						</div>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -140,9 +154,7 @@
 		  </div>
 		</div>
 	</div>
-
-
-
+<!-- TLDR Project End -->
 
 		<div class="row desktop footer col-12">Made with lots of &hearts; and late night snacks</div>
 

@@ -408,8 +408,14 @@ a:active {
 }
 
 
+.modal_proj_desc {
+	padding-top: 2em;
+	font-family: 'Signika';
+}
 
-
+.buttons {
+	font-family: 'Signika';
+}
 
 .footer {
     color: gray;
